@@ -3,6 +3,9 @@ import os
 from datetime import datetime
 
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 CURRENCY_RATES_FILE = "currency_rates.json"
 API_KEY = os.getenv('EXCHANGE_RATE_API_KEY')
